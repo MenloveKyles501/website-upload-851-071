@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>搜索-高清剧集大全</title>
+    <meta name="description" content="搜索高清电视剧大全、热播剧集和精选片单。">
+    <meta name="keywords" content="搜索,分类内容,高清电视剧大全,高清剧集,电视剧更新,热播剧集,精选电视剧,剧集片库">
+    <link rel="stylesheet" href="assets/site.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="高清剧集大全">
+          <span class="brand-icon">▶</span>
+          <span class="brand-text">高清剧集大全</span>
+        </a>
+        <nav class="desktop-nav" aria-label="主导航">
+          <a href="index.html">首页</a>
+          <a href="categories.html">分类</a>
+          <a href="ranking.html">排行</a>
+          <a href="search.html">搜索</a>
+        </nav>
+        <button class="mobile-toggle" type="button" aria-label="打开菜单" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <nav class="mobile-nav" aria-label="移动导航">
+          <a href="index.html">首页</a>
+          <a href="categories.html">分类</a>
+          <a href="ranking.html">排行</a>
+          <a href="search.html">搜索</a>
+      </nav>
+    </header>
+    <main class="container page-main">
+      <section class="page-hero small-hero">
+        <span class="eyebrow">站内搜索</span>
+        <h1>搜索高清剧集片库</h1>
+        <p>按片名、地区、年份、题材、标签快速查找内容。</p>
+      </section>
+      <section class="search-box">
+        <input class="js-site-search" type="search" placeholder="输入片名、地区、题材或关键词" autofocus>
+      </section>
+      <section class="content-section">
+        <div class="movie-grid js-search-results"></div>
+        <p class="empty-state js-search-empty">输入关键词开始搜索</p>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="footer-brand">
+            <span class="brand-icon">▶</span>
+            <span>高清剧集大全</span>
+          </div>
+          <p>整理持续更新的电视剧分类栏目，覆盖高清电视剧大全、热播剧集和精选剧集片单。</p>
+        </div>
+        <div>
+          <h3>快速入口</h3>
+          <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="categories.html">分类</a></li>
+            <li><a href="ranking.html">排行</a></li>
+            <li><a href="search.html">搜索</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>精选分类</h3>
+          <ul>
+              <li><a href="category-hot-series.html">热播剧集</a></li>
+              <li><a href="category-hd-movies.html">高清电影</a></li>
+              <li><a href="category-domestic.html">国产精选</a></li>
+              <li><a href="category-japan-korea.html">日韩剧场</a></li>
+              <li><a href="category-western.html">欧美大片</a></li>
+              <li><a href="category-animation.html">动画专区</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/site.js" defer></script>
+    <script src="data/search-index.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+  </body>
+</html>

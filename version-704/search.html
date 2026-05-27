@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>影片搜索-精选电影合集</title>
+  <meta name="description" content="精选电影合集影片搜索页，可按片名、类型、地区、年份和标签查找精选电影、高分电影与热门片单。">
+  <meta name="keywords" content="精选电影合集,精选电影,高分电影,电影排行榜,高清影片,热门片单,电影合集,影片搜索,电影搜索">
+  <meta name="robots" content="index,follow">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="./index.html" aria-label="精选电影合集">
+        <span class="brand-icon">▶</span>
+        <span class="brand-copy">
+          <strong>精选电影合集</strong>
+          <small>高分电影与热门片单</small>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="主导航">
+        <a class="nav-link" href="./index.html">首页</a>
+        <div class="nav-dropdown">
+          <a class="nav-link" href="./categories.html">分类</a>
+          <div class="dropdown-menu">
+            <a href="./category-featured.html">精选电影</a>
+            <a href="./category-top-rated.html">高分佳片</a>
+            <a href="./category-hot-list.html">热门片单</a>
+            <a href="./category-suspense-thriller.html">悬疑惊悚</a>
+            <a href="./category-action-sci-fi.html">动作科幻</a>
+            <a href="./category-romance-comedy.html">爱情喜剧</a>
+            <a href="./category-animation-family.html">动画家庭</a>
+            <a href="./category-global-cinema.html">环球影单</a>
+          </div>
+        </div>
+        <a class="nav-link" href="./ranking.html">排行榜</a>
+        <a class="nav-link is-active" href="./search.html">搜索</a>
+      </nav>
+      <form class="header-search" action="./search.html" method="get">
+        <input type="search" name="q" aria-label="搜索影片" placeholder="搜索影片...">
+        <button type="submit">搜索</button>
+      </form>
+      <button class="nav-toggle" type="button" aria-label="打开导航" aria-expanded="false" data-menu-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="mobile-panel" data-mobile-panel>
+      <a href="./index.html">首页</a>
+      <a href="./categories.html">分类总览</a>
+      <a href="./ranking.html">排行榜</a>
+      <a href="./search.html">搜索</a>
+      <form action="./search.html" method="get">
+        <input type="search" name="q" placeholder="搜索影片...">
+      </form>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero search-hero">
+      <div class="container">
+        <span class="eyebrow">Search Movies</span>
+        <h1>影片搜索</h1>
+        <p>输入片名、年份、地区、类型或标签，快速查找对应影片详情页。</p>
+      </div>
+    </section>
+    <section class="section-block">
+      <div class="container">
+        <div class="search-panel">
+          <form class="search-page-form" data-search-form>
+            <input type="search" name="q" placeholder="搜索精选电影、高分电影、热门片单..." aria-label="搜索关键词">
+            <button type="submit">搜索</button>
+          </form>
+        </div>
+        <div class="search-meta" data-search-meta>输入关键词后显示匹配影片。</div>
+        <div class="movie-grid category-page-grid" data-search-results></div>
+      </div>
+    </section>
+  </main>
+  <script src="./assets/js/search-data.js"></script>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">
+          <span class="brand-icon">▶</span>
+          <strong>精选电影合集</strong>
+        </div>
+        <p>整理精选电影合集内容，结合高分榜单和热门片单展示，适合查找口碑较好的影片。</p>
+      </div>
+      <div>
+        <h2>快速入口</h2>
+        <ul>
+          <li><a href="./index.html">首页推荐</a></li>
+          <li><a href="./categories.html">分类总览</a></li>
+          <li><a href="./ranking.html">高分排行榜</a></li>
+          <li><a href="./search.html">影片搜索</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>影片分类</h2>
+        <ul>
+            <li><a href="./category-featured.html">精选电影</a></li>
+            <li><a href="./category-top-rated.html">高分佳片</a></li>
+            <li><a href="./category-hot-list.html">热门片单</a></li>
+            <li><a href="./category-suspense-thriller.html">悬疑惊悚</a></li>
+            <li><a href="./category-action-sci-fi.html">动作科幻</a></li>
+            <li><a href="./category-romance-comedy.html">爱情喜剧</a></li>
+            <li><a href="./category-animation-family.html">动画家庭</a></li>
+            <li><a href="./category-global-cinema.html">环球影单</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>热门关键词</h2>
+        <div class="footer-tags">
+          <a href="./search.html?q=%E9%AB%98%E5%88%86%E7%94%B5%E5%BD%B1">高分电影</a>
+          <a href="./search.html?q=%E6%82%AC%E7%96%91">悬疑</a>
+          <a href="./search.html?q=%E7%A7%91%E5%B9%BB">科幻</a>
+          <a href="./search.html?q=%E7%88%B1%E6%83%85">爱情</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">© 精选电影合集</div>
+  </footer>
+  <script src="./assets/js/site.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
